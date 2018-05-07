@@ -28,7 +28,9 @@ public class PlayerMovement : MonoBehaviour {
 
 		Move(h,v);
 
-		Turning();
+		if(!(h==0 && v==0)){
+			Turning();
+		}
 
 	}
 
