@@ -662,6 +662,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114082915388018494, guid: 3d56cd9e9f41ac241947f09df1059418,
+        type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 545663363}
+    - target: {fileID: 114082915388018494, guid: 3d56cd9e9f41ac241947f09df1059418,
+        type: 2}
+      propertyPath: damageImage
+      value: 
+      objectReference: {fileID: 389594465}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d56cd9e9f41ac241947f09df1059418, type: 2}
   m_IsPrefabAsset: 0
@@ -1227,28 +1237,12 @@ MonoBehaviour:
   - {fileID: 1619467229}
   - {fileID: 759634644}
   - {fileID: 1387650429}
---- !u!1 &1175462687 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1946887527869032, guid: 3d56cd9e9f41ac241947f09df1059418,
+--- !u!114 &1175462694 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114082915388018494, guid: 3d56cd9e9f41ac241947f09df1059418,
     type: 2}
   m_PrefabInternal: {fileID: 454038512}
---- !u!114 &1175462694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1175462687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512d87799ca9e56499e56a22a716d266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  healthSlider: {fileID: 545663363}
-  damageImage: {fileID: 389594465}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!1 &1382637826
 GameObject:
   m_ObjectHideFlags: 0
