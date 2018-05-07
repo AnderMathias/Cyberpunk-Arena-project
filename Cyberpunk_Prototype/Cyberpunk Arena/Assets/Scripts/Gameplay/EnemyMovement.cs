@@ -12,6 +12,7 @@ public class EnemyMovement : MonoBehaviour {
 	Transform player;
 	NavMeshAgent nav;
 
+
 	void Awake(){
 		enemyRigidbody = GetComponent<Rigidbody>();
 

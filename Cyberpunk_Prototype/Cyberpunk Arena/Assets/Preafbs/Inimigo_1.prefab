@@ -41,8 +41,9 @@ GameObject:
   - component: {fileID: 114775222740296768}
   - component: {fileID: 54109295929951154}
   - component: {fileID: 195699792147150814}
+  - component: {fileID: 135648790131720322}
   m_Layer: 9
-  m_Name: Inimigo
+  m_Name: Inimigo_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1788388988193452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.573, y: 1.573, z: 0}
+  m_LocalPosition: {x: 7.09, y: 1.573, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4035892417341232}
@@ -162,6 +163,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ef0f11bba4c994d971d6e9896fe387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &135648790131720322
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1788388988193452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &195699792147150814
 NavMeshAgent:
   m_ObjectHideFlags: 1
