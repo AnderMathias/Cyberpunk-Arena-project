@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
 	public float speed = 5f;
-	public float rorationSmoothing = 10f;
+	public float rotationSmoothing = 10f;
 
 	Vector3 movement;
 	Rigidbody playerRigidbody;
@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour {
 		lookDirection.y = 0f;
 
 		Quaternion newRotation = Quaternion.LookRotation(lookDirection);
-		Quaternion finalRotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime*rorationSmoothing);
+		Quaternion finalRotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime*rotationSmoothing);
 		playerRigidbody.MoveRotation(finalRotation);
 	
 	}
