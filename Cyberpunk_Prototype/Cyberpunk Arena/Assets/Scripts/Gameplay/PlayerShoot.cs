@@ -55,8 +55,11 @@ public class PlayerShoot : MonoBehaviour {
 
 		if(Physics.Raycast (shootRay, out shootHit, range, shootableMask)){
 
-			//verificar e dar dano no inimigo AQUI
+			EnemyHealth enemyHealth = shootHit.collider.GetComponent<EnemyHealth>();
 
+			if(enemyHealth != null){
+				enemyHealth.TakeDamage(damagePerShot);
+			}
 
 			gunLine.SetPosition(1,shootHit.point);
 		}else{

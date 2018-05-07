@@ -37,12 +37,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4827235617712552}
   - component: {fileID: 33818540187894644}
-  - component: {fileID: 65411430549863542}
+  - component: {fileID: 136315424873702342}
   - component: {fileID: 114775222740296768}
   - component: {fileID: 54109295929951154}
   - component: {fileID: 195699792147150814}
   - component: {fileID: 135648790131720322}
   - component: {fileID: 114411432996376584}
+  - component: {fileID: 114733967526219942}
   m_Layer: 9
   m_Name: Inimigo_1
   m_TagString: Untagged
@@ -141,18 +142,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65411430549863542
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1788388988193452}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114411432996376584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -166,6 +155,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 0.5
   attackDamage: 10
+--- !u!114 &114733967526219942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1788388988193452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a579bf953ce8884f9877b375d177ee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
 --- !u!114 &114775222740296768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -188,6 +190,19 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &136315424873702342
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1788388988193452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &195699792147150814
 NavMeshAgent:
