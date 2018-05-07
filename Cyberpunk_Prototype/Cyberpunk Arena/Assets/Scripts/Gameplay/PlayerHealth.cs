@@ -13,13 +13,16 @@ public class PlayerHealth : MonoBehaviour
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);     // The colour the damageImage is set to, to flash.
 
 
-    
+	PlayerMovement playerMovement;
+	PlayerShoot playerShoot;
     bool isDead;                                                // Whether the player is dead.
     bool damaged;                                               // True when the player gets damaged.
 
 
     void Awake()
     {
+		playerMovement = GetComponent<PlayerMovement>();
+		playerShoot = GetComponentInChildren<PlayerShoot>();
 
         // Set the initial health of the player.
         currentHealth = startingHealth;
@@ -72,6 +75,9 @@ public class PlayerHealth : MonoBehaviour
     {
         // Set the death flag so this function won't be called again.
         isDead = true;
+
+		playerMovement.enabled = false;
+		playerShoot.enabled = false;
         
     }
 }
