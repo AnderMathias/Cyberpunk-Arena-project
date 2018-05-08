@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: c67e9983edf25bb408fb30aa1610404d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Claws
+    100002: Eye_000
+    100004: Eye_001
+    100006: Eye_002
+    100008: Eye_003
+    100010: Eye_004
+    100012: Eye_005
+    100014: Eye_006
+    100016: Foot_001
+    100018: Foot_002
+    100020: Foot_003
+    100022: Foot_004
+    100024: Foot_005
+    100026: Foot_006
+    100028: Leg_000
+    100030: Leg_001
+    100032: Leg_002
+    100034: Leg_003
+    100036: Leg_004
+    100038: Leg_005
+    100040: //RootNode
+    400000: Claws
+    400002: Eye_000
+    400004: Eye_001
+    400006: Eye_002
+    400008: Eye_003
+    400010: Eye_004
+    400012: Eye_005
+    400014: Eye_006
+    400016: Foot_001
+    400018: Foot_002
+    400020: Foot_003
+    400022: Foot_004
+    400024: Foot_005
+    400026: Foot_006
+    400028: Leg_000
+    400030: Leg_001
+    400032: Leg_002
+    400034: Leg_003
+    400036: Leg_004
+    400038: Leg_005
+    400040: //RootNode
+    2100000: unnamed
+    2300000: Claws
+    2300002: Eye_000
+    2300004: Eye_001
+    2300006: Eye_002
+    2300008: Eye_003
+    2300010: Eye_004
+    2300012: Eye_005
+    2300014: Eye_006
+    2300016: Foot_001
+    2300018: Foot_002
+    2300020: Foot_003
+    2300022: Foot_004
+    2300024: Foot_005
+    2300026: Foot_006
+    2300028: Leg_000
+    2300030: Leg_001
+    2300032: Leg_002
+    2300034: Leg_003
+    2300036: Leg_004
+    2300038: Leg_005
+    2300040: //RootNode
+    3300000: Claws
+    3300002: Eye_000
+    3300004: Eye_001
+    3300006: Eye_002
+    3300008: Eye_003
+    3300010: Eye_004
+    3300012: Eye_005
+    3300014: Eye_006
+    3300016: Foot_001
+    3300018: Foot_002
+    3300020: Foot_003
+    3300022: Foot_004
+    3300024: Foot_005
+    3300026: Foot_006
+    3300028: Leg_000
+    3300030: Leg_001
+    3300032: Leg_002
+    3300034: Leg_003
+    3300036: Leg_004
+    3300038: Leg_005
+    3300040: //RootNode
+    4300000: Spider
+    4300002: Claws
+    4300004: Eye_006
+    4300006: Eye_005
+    4300008: Eye_004
+    4300010: Eye_002
+    4300012: Eye_001
+    4300014: Eye_000
+    4300016: Eye_003
+    4300018: Leg_005
+    4300020: Foot_005
+    4300022: Leg_004
+    4300024: Foot_006
+    4300026: Leg_003
+    4300028: Foot_004
+    4300030: Leg_002
+    4300032: Foot_003
+    4300034: Leg_001
+    4300036: Foot_001
+    4300038: Leg_000
+    4300040: Foot_002
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
