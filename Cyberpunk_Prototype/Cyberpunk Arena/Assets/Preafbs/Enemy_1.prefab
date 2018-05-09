@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 114411432996376584}
   - component: {fileID: 114733967526219942}
   m_Layer: 9
-  m_Name: Inimigo_1
+  m_Name: Enemy_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1633,8 +1633,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c8800d12c490f9478a158652e228178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenAttacks: 1
+  timeBetweenAttacks: 2
   attackDamage: 10
+  attackRange: 2
 --- !u!114 &114733967526219942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1659,6 +1660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ef0f11bba4c994d971d6e9896fe387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chasePlayer: 0
 --- !u!135 &135648790131720322
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -1669,7 +1671,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.2
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136315424873702342
 CapsuleCollider:

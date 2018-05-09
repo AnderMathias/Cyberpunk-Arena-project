@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttack : MonoBehaviour {
+public class EnemyShoot: MonoBehaviour {
 
 	public float timeBetweenAttacks= 1f;
 	public int attackDamage = 10;
-	public float attackRange = 2f;
+	public float attackRange = 5f;
+
+	public Transform bulletProjectile;
+	public float bulletSpeed = 200f;
+	public Transform bulletSource;
+
 
 	GameObject player;
 	PlayerHealth playerHealth;
@@ -41,9 +46,13 @@ public class EnemyAttack : MonoBehaviour {
 	void Attack(){
 		timer = 0f;
 
-		if(playerHealth.currentHealth >0){
-			playerHealth.TakeDamage(attackDamage);
-		}
+		Transform bullet = Instantiate(bulletProjectile,transform.position,transform.rotation);
+
+		bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward*bulletSpeed);
+		bullet.GetComponent<BulletScript>().parentEnemy = transform.gameObject;
+//		if(playerHealth.currentHealth >0){
+//			playerHealth.TakeDamage(attackDamage);
+//		}
 	}
 
 }
