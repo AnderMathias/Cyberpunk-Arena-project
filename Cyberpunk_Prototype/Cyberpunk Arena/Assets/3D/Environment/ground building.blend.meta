@@ -15,6 +15,20 @@ ModelImporter:
     100018: Cube_008
     100020: Cube_009
     100022: Cube_010
+    100024: Cube_011
+    100026: Cylinder
+    100028: Cube_012
+    100030: Canos
+    100032: Casa_Topo
+    100034: Ground
+    100036: Janela_Predio
+    100038: Obstaculo_01
+    100040: Obstaculo_02
+    100042: Parapeito
+    100044: Parede_Predio_01
+    100046: Parede_Predio_02
+    100048: Quina_Predio
+    100050: Quina_Predio_borda
     400000: //RootNode
     400002: Cube
     400004: Cube_004
@@ -27,6 +41,20 @@ ModelImporter:
     400018: Cube_008
     400020: Cube_009
     400022: Cube_010
+    400024: Cube_011
+    400026: Cylinder
+    400028: Cube_012
+    400030: Canos
+    400032: Casa_Topo
+    400034: Ground
+    400036: Janela_Predio
+    400038: Obstaculo_01
+    400040: Obstaculo_02
+    400042: Parapeito
+    400044: Parede_Predio_01
+    400046: Parede_Predio_02
+    400048: Quina_Predio
+    400050: Quina_Predio_borda
     2100000: Material
     2100002: unnamed
     2300000: //RootNode
@@ -41,6 +69,20 @@ ModelImporter:
     2300018: Cube_008
     2300020: Cube_009
     2300022: Cube_010
+    2300024: Cube_011
+    2300026: Cylinder
+    2300028: Cube_012
+    2300030: Canos
+    2300032: Casa_Topo
+    2300034: Ground
+    2300036: Janela_Predio
+    2300038: Obstaculo_01
+    2300040: Obstaculo_02
+    2300042: Parapeito
+    2300044: Parede_Predio_01
+    2300046: Parede_Predio_02
+    2300048: Quina_Predio
+    2300050: Quina_Predio_borda
     3300000: //RootNode
     3300002: Cube
     3300004: Cube_004
@@ -53,6 +95,20 @@ ModelImporter:
     3300018: Cube_008
     3300020: Cube_009
     3300022: Cube_010
+    3300024: Cube_011
+    3300026: Cylinder
+    3300028: Cube_012
+    3300030: Canos
+    3300032: Casa_Topo
+    3300034: Ground
+    3300036: Janela_Predio
+    3300038: Obstaculo_01
+    3300040: Obstaculo_02
+    3300042: Parapeito
+    3300044: Parede_Predio_01
+    3300046: Parede_Predio_02
+    3300048: Quina_Predio
+    3300050: Quina_Predio_borda
     4300000: Cube
     4300002: Cube_004
     4300004: Cube_010
@@ -64,6 +120,20 @@ ModelImporter:
     4300016: Cube_003
     4300018: Cube_002
     4300020: Cube_001
+    4300022: Cylinder
+    4300024: Cube_011
+    4300026: Cube_012
+    4300028: Canos
+    4300030: Obstaculo_01
+    4300032: Obstaculo_02
+    4300034: Casa_Topo
+    4300036: Janela_Predio
+    4300038: Parede_Predio_02
+    4300040: Quina_Predio
+    4300042: Quina_Predio_borda
+    4300044: Parede_Predio_01
+    4300046: Parapeito
+    4300048: Ground
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
