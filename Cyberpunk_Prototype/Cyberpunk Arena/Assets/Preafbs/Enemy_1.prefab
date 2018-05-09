@@ -348,7 +348,6 @@ GameObject:
   - component: {fileID: 114775222740296768}
   - component: {fileID: 54109295929951154}
   - component: {fileID: 195699792147150814}
-  - component: {fileID: 135648790131720322}
   - component: {fileID: 114411432996376584}
   - component: {fileID: 114733967526219942}
   m_Layer: 9
@@ -585,7 +584,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1788388988193452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 14.33, y: 1.573, z: 4.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4837728692627148}
@@ -820,7 +819,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: c67e9983edf25bb408fb30aa1610404d, type: 3}
+  - {fileID: 2100000, guid: be892e26695046e41be26a9a691118a3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -995,7 +994,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: c67e9983edf25bb408fb30aa1610404d, type: 3}
+  - {fileID: 2100000, guid: be892e26695046e41be26a9a691118a3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1662,18 +1661,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chasePlayer: 0
   stoppedRotationSpeed: 5
---- !u!135 &135648790131720322
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1788388988193452}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136315424873702342
 CapsuleCollider:
   m_ObjectHideFlags: 1
