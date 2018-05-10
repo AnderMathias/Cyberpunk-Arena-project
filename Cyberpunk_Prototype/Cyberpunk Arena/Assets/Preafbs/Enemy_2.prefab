@@ -1909,12 +1909,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a579bf953ce8884f9877b375d177ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
+  startingHealth: 20
   currentHealth: 0
   sinkSpeed: 0.5
   sinkDelay: 2
+<<<<<<< HEAD
   blood: {fileID: 198764809032433590}
   died: {fileID: 198380034599067180}
+=======
+>>>>>>> 6e9dc2d6f213cb052f786046707bcfa76b14872e
 --- !u!114 &114702413499035704
 MonoBehaviour:
   m_ObjectHideFlags: 1
