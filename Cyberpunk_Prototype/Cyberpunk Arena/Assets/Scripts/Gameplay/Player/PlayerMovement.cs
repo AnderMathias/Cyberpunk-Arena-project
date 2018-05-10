@@ -11,11 +11,15 @@ public class PlayerMovement : MonoBehaviour {
 	Vector3 movement;
 	Rigidbody playerRigidbody;
 
-	void Awake(){
-		playerRigidbody = GetComponent<Rigidbody>();
+    private PlayerAnimations anim;
+    
 
-		//Autoconfigure rigidbody
-		playerRigidbody.drag = Mathf.Infinity;
+    void Awake(){
+		playerRigidbody = GetComponent<Rigidbody>();
+        anim = GetComponent<PlayerAnimations>();
+
+        //Autoconfigure rigidbody
+        playerRigidbody.drag = Mathf.Infinity;
 		playerRigidbody.angularDrag = Mathf.Infinity;
 		playerRigidbody.constraints = RigidbodyConstraints.FreezePositionY | 
 			RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
@@ -26,7 +30,15 @@ public class PlayerMovement : MonoBehaviour {
 		float h = Input.GetAxisRaw("Horizontal");
 		float v = Input.GetAxisRaw("Vertical");
 
-		Move(h,v);
+        if (h == 0 && v == 0) {
+            anim.Idle();
+        }
+        else if (h != 0 || v != 0)
+        {
+            anim.Running();
+        }
+
+        Move(h,v);
 
 		if(!(h==0 && v==0)){
 			Turning();

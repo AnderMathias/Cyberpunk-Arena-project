@@ -17,13 +17,16 @@ public class PlayerShoot : MonoBehaviour {
 	Light gunLight;
 	float effctsDisplayTime = 0.2f;
 
+    private PlayerAnimations anim;
 
-	void Awake () {
+
+    void Awake () {
 		shootableMask = LayerMask.GetMask("Shootable");
 		gunLine = GetComponent<LineRenderer>();
 		gunLight = GetComponent<Light>();
-				
-	}
+        anim = transform.parent.parent.GetComponent<PlayerAnimations>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -44,6 +47,8 @@ public class PlayerShoot : MonoBehaviour {
 	}
 
 	void Shoot(){
+        anim.Shooting();
+
 		shotTimer = 0f;
 
 		gunLight.enabled = true;
