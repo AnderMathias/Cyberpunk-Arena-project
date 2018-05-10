@@ -15,12 +15,15 @@ public class EnemyAttack : MonoBehaviour {
 	bool playerInRange;
 	float timer;
 
+	Animator anim;
+
 
 	void Awake () {
 		player = GameObject.FindGameObjectWithTag("Player");
 		playerHealth = player.GetComponent<PlayerHealth>();
 		enemyHealth = GetComponent<EnemyHealth>();
 		enemyMovement = GetComponent<EnemyMovement>();
+		anim = GetComponentInChildren<Animator>();
 	}
 
 
@@ -40,7 +43,7 @@ public class EnemyAttack : MonoBehaviour {
 
 	void Attack(){
 		timer = 0f;
-
+		anim.SetTrigger("Attack");
 		if(playerHealth.currentHealth >0){
 			playerHealth.TakeDamage(attackDamage);
 		}

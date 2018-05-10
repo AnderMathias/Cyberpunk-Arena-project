@@ -10,12 +10,13 @@ public class EnemyHealth : MonoBehaviour {
 
 	CapsuleCollider capsuleCollider;
 	bool isDead;
-
+	Animator anim;
 
 	void Awake() {
 		capsuleCollider = GetComponent <CapsuleCollider>();
 
 		currentHealth = startingHealth;
+		anim = GetComponentInChildren<Animator>();
 	}
 	
 
@@ -31,6 +32,8 @@ public class EnemyHealth : MonoBehaviour {
 
 		if(currentHealth <=0){
 			Death();
+		}else{
+			anim.SetTrigger("Hit");
 		}
 	}
 
@@ -38,6 +41,6 @@ public class EnemyHealth : MonoBehaviour {
 		isDead = true;
 
 		capsuleCollider.isTrigger = true;
-		
+		anim.SetTrigger("Dead");
 	}
 }
