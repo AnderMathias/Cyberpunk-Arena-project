@@ -12,14 +12,20 @@ public class EnemyHealth : MonoBehaviour {
 
 	Animator anim;
 	CapsuleCollider capsuleCollider;
-	bool isDead;
+    //NavMesh navMeshCollider;
+    bool isDead;
 	bool isSinking;
 
+    public ParticleSystem blood;
+    public ParticleSystem died;
 
-	void Awake() {
+
+    void Awake() {
 		capsuleCollider = GetComponent <CapsuleCollider>();
+        
+        //blood = GetComponentInChildren<ParticleSystem>();
 
-		currentHealth = startingHealth;
+        currentHealth = startingHealth;
 		anim = GetComponentInChildren<Animator>();
 	}
 	
@@ -39,15 +45,18 @@ public class EnemyHealth : MonoBehaviour {
 		if(currentHealth <=0){
 			Death();
 		}else{
-			anim.SetTrigger("Hit");
+            blood.Play();
+            anim.SetTrigger("Hit");
 		}
 	}
 
 	void Death(){
 		isDead = true;
-
-		Invoke("StartSinking", sinkDelay);
-		capsuleCollider.isTrigger = true;
+        gameObject.GetComponent<NavMeshAgent>().height = 0.1f;
+        gameObject.GetComponent<NavMeshAgent>().enabled = false;
+        died.Play();
+        Invoke("StartSinking", sinkDelay);
+		capsuleCollider.enabled = false;
 		anim.SetTrigger("Dead");
 	}
 

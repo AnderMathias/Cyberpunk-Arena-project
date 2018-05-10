@@ -6,8 +6,9 @@ public class PlayerAnimations : MonoBehaviour {
 
     // Use this for initialization
     public Animator anim;
+    private ParticleSystem blood;
     void Start () {
-
+        blood = GetComponentInChildren<ParticleSystem>();
     }
 	
 	// Update is called once per frame
@@ -44,6 +45,7 @@ public class PlayerAnimations : MonoBehaviour {
     //Chamado no PlayerHealth linha 41
     public void Damaged()
     {
+        blood.Play();
         anim.SetTrigger("Damaged");
     }
 }
