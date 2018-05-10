@@ -13,6 +13,8 @@ public class EnemyMovement : MonoBehaviour {
 	PlayerHealth playerHealth;
 	EnemyHealth enemyHealth;
 	NavMeshAgent nav;
+	Animator anim;
+
 
 	public bool chasePlayer;
 	public float stoppedRotationSpeed = 5f;
@@ -31,6 +33,7 @@ public class EnemyMovement : MonoBehaviour {
 		playerHealth = player.GetComponent<PlayerHealth>();
 		enemyHealth = GetComponent<EnemyHealth>();
 		nav = GetComponent<NavMeshAgent>();
+		anim = GetComponentInChildren<Animator>();
 
 		chasePlayer = true;
 	}
@@ -40,10 +43,12 @@ public class EnemyMovement : MonoBehaviour {
 			if(chasePlayer){
 				if(nav.isStopped){
 					nav.isStopped = false;
+					anim.SetBool("Chasing",true);
 				}
 				nav.SetDestination(player.position);
 			}else{
 				nav.isStopped = true;
+				anim.SetBool("Chasing",false);
 				Vector3 lookPos = player.position - transform.position;
 				lookPos.y = 0;
 				Quaternion rotation = Quaternion.LookRotation(lookPos);
@@ -51,6 +56,7 @@ public class EnemyMovement : MonoBehaviour {
 			}
 		}else{
 			nav.enabled = false;
+			anim.SetBool("Chasing",false);
 		}
 
 	}
